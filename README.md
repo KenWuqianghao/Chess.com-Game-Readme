@@ -22,15 +22,10 @@ Chess.com-Game-Readme
 ## 📚 Table of Contents
 - [📚 Table of Contents](#-table-of-contents)
 - [📍Overview](#-introdcution)
-- [🔮 Features](#-features)
 - [⚙️ Project Structure](#project-structure)
-- [🧩 Modules](#modules)
 - [🏎💨 Getting Started](#-getting-started)
-- [🗺 Roadmap](#-roadmap)
 - [🤝 Contributing](#-contributing)
 - [🪪 License](#-license)
-- [📫 Contact](#-contact)
-- [🙏 Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -61,16 +56,6 @@ repo
 
 <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-src-open.svg" width="80" />
 
-## 💻 Modules
-<details closed><summary>Root</summary>
-
-| File      | Summary                 | Module    |
-|:----------|:------------------------|:----------|
-| app.py    | Error fetching summary. | app.py    |
-
-</details>
-<hr />
-
 ## 🚀 Getting Started
 
 ### ✅ Prerequisites
@@ -81,10 +66,14 @@ Before you begin, ensure that you have the following prerequisites installed:
 ### 💻 Installation
 
 1. Fork this repo
+<img width="149" alt="Screenshot 2023-06-10 at 04 41 18" src="https://github.com/KenWuqianghao/Chess.com-Game-Readme/assets/20444505/741e6f93-c2cb-45f8-bde0-1e26c6758942">
 
 2. Go to vercel, create a project using the forked github repo
+<img width="1512" alt="Screenshot 2023-06-10 at 04 41 30" src="https://github.com/KenWuqianghao/Chess.com-Game-Readme/assets/20444505/c9ddd457-dda5-4ada-92af-2a75c17de5d9">
+<img width="1512" alt="Screenshot 2023-06-10 at 04 41 41" src="https://github.com/KenWuqianghao/Chess.com-Game-Readme/assets/20444505/07d4168e-f208-4646-b366-a6b307d88dbb">
 
 3. Provide environment variable: username
+<img width="1512" alt="Screenshot 2023-06-10 at 04 42 08" src="https://github.com/KenWuqianghao/Chess.com-Game-Readme/assets/20444505/915fb13c-f76c-4f30-a146-8fe78055f5ba">
 
 4. Deploy and enjoy
 
