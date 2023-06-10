@@ -5,7 +5,7 @@
 <br>
 Chess.com-Game-Readme
 </h1>
-<h3 align="center">📍 Find Your Move -- Chess.com-Game-Readme!</h3>
+<h3 align="center">📍 Show off your most recent game on Chess.com through your GitHub readme</h3>
 <h3 align="center">🚀 Developed with the software and tools below.</h3>
 <p align="center">
 
@@ -36,11 +36,7 @@ Chess.com-Game-Readme
 
 ## 📍Overview
 
-The Chess.com-Game-Readme GitHub project is a library of game annotations from Chess.com users. The project enables users to search for high-quality annotations of grandmaster chess
-
-## 🔮 Feautres
-
-> `[📌  INSERT-PROJECT-FEATURES]`
+The Chess.com-Game-Readme GitHub project allows you to display your most recent chess.com game on your github readme page, sharing with everyone how your games are going.
 
 ---
 
@@ -70,7 +66,6 @@ repo
 
 | File      | Summary                 | Module    |
 |:----------|:------------------------|:----------|
-| .DS_Store | Error fetching summary. | .DS_Store |
 | app.py    | Error fetching summary. | app.py    |
 
 </details>
@@ -81,44 +76,23 @@ repo
 ### ✅ Prerequisites
 
 Before you begin, ensure that you have the following prerequisites installed:
-> `[📌  INSERT-PROJECT-PREREQUISITES]`
+> `Register an account on vercel`
 
 ### 💻 Installation
 
-1. Clone the Chess.com-Game-Readme repository:
-```sh
-git clone https://github.com/KenWuqianghao/Chess.com-Game-Readme
-```
+1. Fork this repo
 
-2. Change to the project directory:
-```sh
-cd Chess.com-Game-Readme
-```
+2. Go to vercel, create a project using the forked github repo
 
-3. Install the dependencies:
-```sh
-[INSERT-INSTALL-GUIDE-HERE]
-```
+3. Provide environment variable: username
+
+4. Deploy and enjoy
 
 ### 🤖 Using Chess.com-Game-Readme
 
 ```sh
-[INSERT-RUN-GUIDE-HERE]
+<img src="link-to-your-vercel-app/?">
 ```
-
-### 🧪 Running Tests
-```sh
-#run tests
-```
-
-<hr />
-
-## 🛠 Future Development
-- [X] [📌  COMPLETED-TASK]
-- [ ] [📌  INSERT-TASK]
-- [ ] [📌  INSERT-TASK]
-
-
 ---
 
 ## 🤝 Contributing
@@ -146,11 +120,9 @@ The project maintainers will review your changes and provide feedback or merge t
 
 ## 🪪 License
 
-This project is licensed under the `[📌  INSERT-LICENSE-TYPE]` License. See the [LICENSE](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository) file for additional info.
+This project is licensed under the `MIT` License. See the [LICENSE](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository) file for additional info.
 
 ---
-
-## 🙏 Acknowledgments
 
 [📌  INSERT-DESCRIPTION]
 
