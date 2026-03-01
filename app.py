@@ -10,13 +10,17 @@ load_dotenv()
 
 
 def generate_card():
-    date_time = datetime.datetime.now()
+    date_time = datetime.datetime.utcnow()
     username = os.getenv("username")
     email = os.getenv("email")
 
     Client.request_config['headers']['User-Agent'] = 'My Chess.com Github Readme Application.You can find it on my Github profile https://github.com/KenWuqianghao. Contact me at {}'.format(email)
 
-    games = get_player_games_by_month_pgn(username = username, datetime_obj = date_time)
+    try:
+        games = get_player_games_by_month_pgn(username = username, datetime_obj = date_time)
+    except Exception:
+        date_time = date_time.replace(day=1) - datetime.timedelta(days=1)
+        games = get_player_games_by_month_pgn(username = username, datetime_obj = date_time)
     for line in games.json['pgn']['pgn'].splitlines():
         if line[:16] == "[CurrentPosition":
             pgn = line[18:-2]
