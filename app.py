@@ -2,8 +2,10 @@ from chessdotcom import get_player_games_by_month_pgn, Client
 from flask import Flask, Response
 from dotenv import load_dotenv
 import chess.svg
+import chess.pgn
 import datetime
 import chess
+import io
 import os
 
 load_dotenv()
@@ -21,14 +23,15 @@ def generate_card():
     except Exception:
         date_time = date_time.replace(day=1) - datetime.timedelta(days=1)
         games = get_player_games_by_month_pgn(username = username, datetime_obj = date_time)
-    for line in games.json['pgn']['pgn'].splitlines():
-        if line[:16] == "[CurrentPosition":
-            pgn = line[18:-2]
+    pgn_io = io.StringIO(games.json['pgn']['pgn'])
+    game = None
+    while True:
+        g = chess.pgn.read_game(pgn_io)
+        if g is None:
             break
-    
-    print(pgn)
-    
-    board = chess.Board(pgn)
+        game = g
+
+    board = game.end().board() if game else chess.Board()
 
     return chess.svg.board(board, size=350)
 
